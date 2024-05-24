@@ -1,0 +1,19 @@
+[package]
+name = "zai"
+authors = ["Jakub Grodzki 240675"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = { version = "0.5.3", features = ["std"] }
+axum = { version = "0.7.4", features = ["multipart"] }
+axum-htmx = "0.5.0"
+axum_session = "0.13.0"
+dotenvy = "0.15.7"
+maud = { version = "0.26.0", features = ["axum"] }
+passwords = { version = "3.1.16", features = ["common-password"] }
+regex = "1.10.4"
+serde = "1.0.197"
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio"] }
+tokio = { version = "1.36.0", features = ["rt-multi-thread"] }
+tower-http = { version = "0.5.2", features = ["fs"] }
